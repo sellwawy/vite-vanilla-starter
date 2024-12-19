@@ -28,9 +28,7 @@ export default {
       },
       postcss: {
          plugins: [
-            pxtorem({
-               propList: ['*'],
-            }),
+            pxtorem({ propList: process.env.NODE_ENV === 'development' ? ['!*'] : ['*'] }),
             autoprefixer,
          ],
       },
