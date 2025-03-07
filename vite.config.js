@@ -1,7 +1,6 @@
 // /** @type {import('vite').UserConfig} */
 import { resolve } from 'path'
 import pxtorem from 'postcss-pxtorem'
-import autoprefixer from 'autoprefixer'
 
 export default {
    server: {
@@ -27,10 +26,7 @@ export default {
          },
       },
       postcss: {
-         plugins: [
-            pxtorem({ propList: process.env.NODE_ENV === 'development' ? ['!*'] : ['*'] }),
-            autoprefixer,
-         ],
+         plugins: [pxtorem({ propList: process.env.NODE_ENV === 'development' ? ['!*'] : ['*'] })],
       },
    },
 }

@@ -1,0 +1,60 @@
+// See: https://piccalil.li/blog/a-more-modern-css-reset/
+
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+}
+
+html {
+   -moz-text-size-adjust: none;
+   -webkit-text-size-adjust: none;
+   text-size-adjust: none;
+   // overflow: hidden;
+}
+
+body {
+   min-height: 100vh;
+}
+
+ul[role='list'],
+ol[role='list'] {
+   list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+   line-height: 1.1;
+}
+
+h1,
+h2,
+h3,
+h4 {
+   text-wrap: balance;
+}
+
+img,
+picture {
+   max-width: 100%;
+   display: block;
+}
+
+input,
+button,
+textarea,
+select {
+   font-family: inherit;
+   font-size: inherit;
+   color: inherit;
+}
