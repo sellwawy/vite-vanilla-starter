@@ -25,14 +25,8 @@ npm run dev
 npm run build
 ```
 
-## 🛠️ Available Scripts
+## 📺 preview
 
-```json
-{
-   "scripts": {
-      "dev": "vite",
-      "build": "vite build",
-      "preview": "vite preview"
-   }
-}
+```bash
+npm run preview
 ```
